@@ -60,6 +60,18 @@
 // let even_sum = 0;
 
 // for (let i = 0; i < numbers.length; i++) {
+//      if (numbers[i] % 2 === 0) {
+//         even_sum += numbers[i]
+//      } else {
+//          0
+//      }
+    
+// }
+
+// console.log(even_sum);
+
+
+// for (let i = 0; i < numbers.length; i++) {
 //     even_sum = numbers[i] % 2 === 0 ? numbers[i] : 0;
 // }
 
@@ -179,10 +191,10 @@ const products = [
 // вызвать метод массива и сформировать новый массив, который состоит из 
 // объектов со свойствами title, price;
 
-const result = products.map(el => (
-    {
-        title: el.title,
-        price: el.price
-    }
-));
-console.log(result);
+// const result = products.map(el => (
+//     {
+//         title: el.title,
+//         price: el.price
+//     }
+// ));
+// console.log(result);

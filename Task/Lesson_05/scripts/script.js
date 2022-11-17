@@ -6,7 +6,6 @@
 // 4. При нажатии на кнопку img, нужно менять фон на картинку
 //  document.body.style.backgroungImage = 'url(./img1.jpg)';
 
-
 // const redBtn = document.querySelector("#red");
 // const greenBtn = document.querySelector("#green");
 // const blueBtn = document.querySelector("#blue");
@@ -28,8 +27,6 @@
 //   document.body.style.background = "url(img/img.jpg)";
 // });
 
-
-
 const buttons = document.querySelectorAll(".item");
 // console.log(buttons); // massivopodobniy spisok uzlov
 
@@ -42,5 +39,12 @@ buttonsArr.map((button) => {
   });
 });
 
-
 // Pri najatii na knopku sluchainiy zvet, menyat zvet fona na sluchayniy.
+
+const random = document.querySelector("#random");
+
+const get_color = () => Math.round(Math.random() * 255);
+
+random.addEventListener("click", () => {
+  document.body.style.background = `rgb(${get_color()}, ${get_color()}, ${get_color()})`;
+});

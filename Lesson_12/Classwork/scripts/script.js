@@ -110,6 +110,9 @@ const products = [
 // });
 // console.log(titles);
 
+// const titles = products.map(({title}) => title);
+// console.log(titles);
+
 
 // const titles = products.map(({title, price}) => `${title} - ${price}`);
 // const titles = products.map((product) => `${product.title} - ${product.price}`);
@@ -158,16 +161,6 @@ const products = [
 
 // console.log(result);
 
- 
-// const result = products.map(({ id, title, price, marks }) => ({
-//     id,
-//     title,
-//     price,
-//     avg_mark: marks.reduce((a, b) => a + b) / marks.length,
-//   }));
-  
-//   console.log(result);
-
 
 // const result = products.map(({ marks, ...product }) => ({
 //   ...product,
@@ -179,8 +172,8 @@ const products = [
 
 // 10. Используя методы массивов найти общую стоимость всех товаров.
 
-    const result = products.reduce(
-    (prev, {price, count}) => prev + price * count,
-    0
-    );
-    console.log(result);
+    // const result = products.reduce(
+    // (prev, {price, count}) => prev + price * count,
+    // 0
+    // );
+    // console.log(result);
