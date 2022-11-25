@@ -127,7 +127,8 @@ const orders = [
 
 // const currentCustomerId = customers.find(
 //   (customer) => customer.firstName == "Sam" && customer.lastName == "Tyler"
-// ).id; // get id
+// ).id;   // получили id
+
 
 // const currentCustomerProd = orders.find(
 //   (order) => order.customerId == currentCustomerId
@@ -144,7 +145,7 @@ const orders = [
 // const findProductsByPerson = (name, surname) => {
 //   const currentCustomerId = customers.find(
 //     (customer) => customer.firstName == name && customer.lastName == surname
-//   ).id;  // находит id пользовател по имени и фамилли
+//   ).id;  // находит id пользователь по имени и фамилии
 
 //   return orders.find((order) => order.customerId == currentCustomerId).products;
 // };
@@ -186,11 +187,16 @@ const orders = [
     Если ни один элемент не удовлетворяет условию - вернется false
 */
 
+// Задача. Вернуть массив заказов, сумма заказанных продуктов которых больше чем 2000.
+
 // const result = orders.filter(order => {
 //     return order.products.reduce((sum, current) => sum + current.price, 0) > 2000
 // }).length == orders.length;
 // console.log(result);
 
+
+
+// Вместе.У всех ли заказов, сумма заказанных товаров больше чем 2000. Если больше 2000 - true, если меньше false
 
 // const isMore = orders.every(order => order.products.reduce((sum, current) => sum + current.price, 0) > 2000);
 // console.log(isMore);
@@ -198,12 +204,12 @@ const orders = [
 
 // Заказал ли пользователь с id 4 хоть что-то. Есть ли заказ в массиве orders, который заказал юзер с id 4.
 
-const result = (userId) => {
-    return orders.some(order => order.customerId === userId)
-}
+// const result = (userId) => {
+//     return orders.some(order => order.customerId === userId)
+// }
 
-console.log(result(4));
-console.log(result(1));
+// console.log(result(4));
+// console.log(result(1));
 
 
 // Есть ли в списке хоть один элемент, который больше 50. 
