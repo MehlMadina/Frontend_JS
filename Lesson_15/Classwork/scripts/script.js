@@ -63,9 +63,8 @@ const cards_render = (id, title, price) => {
   const price_elem = document.createElement("p");
   const delete_btn_elem = document.createElement("button");
 
-  delete_btn_elem.addEventListener("click", () => {
-    deleteProduct(id);
-  });
+  delete_btn_elem.addEventListener("click", () => deleteProduct(id));
+  
   card.addEventListener(
     "mousemove",
     () => (card.style.backgroundColor = random_color())
@@ -87,6 +86,9 @@ const render = () => {
   if (data.length === 0) {
     const info_elem = document.createElement("p");
     info_elem.innerText = `Товаров нет`;
+
+    info_elem.classList.add('info');
+    
     products.append(info_elem);
   } else {
     data.forEach(({ id, title, price }) => {

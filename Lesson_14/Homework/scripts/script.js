@@ -7,25 +7,36 @@ const cardsRender = () => {
   const cardContainer = document.querySelector(".cards-container");
   cardContainer.innerText = "";
 
-  productsArr.forEach(({ title, price, count }) => {
-    const card = document.createElement("div");
-    const titleElem = document.createElement("p");
-    const priceElem = document.createElement("p");
-    const countElem = document.createElement("p");
+  if (productsArr.length === 0) {
+    const info_elem = document.createElement("p");
+    info_elem.innerText = `Товаров нет`;
 
-    const sum = price * count;
+    info_elem.classList.add("info");
 
-    titleElem.innerText = title;
-    priceElem.innerText = price;
-    countElem.innerText = `${price} x ${count} = ${sum}`;
+    cardContainer.append(info_elem);
+  } else {
+    productsArr.forEach(({ title, price, count }) => {
+      const card = document.createElement("div");
+      const titleElem = document.createElement("p");
+      const priceElem = document.createElement("p");
+      const countElem = document.createElement("p");
 
-    card.classList.add("card");
-    titleElem.classList.add('card_title');
+      const sum = price * count;
 
-    card.append(titleElem, priceElem, countElem);
-    cardContainer.append(card);
-  });
+      titleElem.innerText = title;
+      priceElem.innerText = price;
+      countElem.innerText = `${price} x ${count} = ${sum}`;
+
+      card.classList.add("card");
+      titleElem.classList.add("card_title");
+
+      card.append(titleElem, priceElem, countElem);
+      cardContainer.append(card);
+    });
+  }
 };
+
+cardsRender();
 
 formElem.addEventListener("submit", (event) => {
   event.preventDefault();
