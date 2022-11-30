@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #e7e1d6;
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 10px;
+    height: 100vh;
+}
+
+.dark .main {
+    background-color: #454547;
+    color: #e9e1d6;
+}
+
+.change_mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #454547;
+    border: none;
+    cursor: pointer;
+}
+
+.dark .change_mode {
+    background-color: #e9e1d6;
+}
+
+.first_btn {
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+
+.second_btn {
+    height: 25px;
+    width: 25px;
+}
