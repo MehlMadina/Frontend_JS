@@ -26,6 +26,11 @@ const main_elem = document.querySelector('.main');
 
 // localStorage.getItem('mode')
 
+// LocalStorage — это свойство, открывающее доступ к специальному объекту Storage (хранилище). Его используют для получения информации из локального хранилища.
+
+// Для чего нужен localStorage?
+// Объекты веб-хранилища localStorage и sessionStorage позволяют хранить пары ключ/значение в браузере. Что в них важно – данные, которые в них записаны, сохраняются после обновления страницы (в случае sessionStorage ) и даже после перезапуска браузера (при использовании localStorage )
+
 if (localStorage.getItem("mode") === "dark") {
   document.body.classList.add("dark");
 }
