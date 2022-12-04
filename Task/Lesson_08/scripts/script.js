@@ -76,7 +76,7 @@ showProducts(laptops);
 // Функция поиска по введенному значению
 
 searchInput.addEventListener("input", (e) => {
-  const value = e.target.value; // e.target.value - введенная строка
+  const value = e.target.value.trim(); // e.target.value - введенная строка
   // фильтруем массив laptops по содержанию строки e.target.value
   // в свойстве name каждого объекта массива
 
@@ -115,9 +115,7 @@ const str = "a"; // Содержится ли данная подстрока в
 // const filteredNames = arr.filter(el => el.name.includes(str));
 // console.log(filteredNames);
 
-/*
-  ДЗ. Сделать так, чтобы при вводе пробелов, отображались все продукты  *trim()
-*/
+
 
 // Функция фильтрация по категории
 
