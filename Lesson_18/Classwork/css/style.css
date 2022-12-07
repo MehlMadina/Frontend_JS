@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 .add_task {
@@ -44,9 +47,18 @@
 }
 
 .tasks div {
-    border: 1px solid black;
+    border: 2px solid white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+}
+
+.button {
+    padding: 8px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
 }
