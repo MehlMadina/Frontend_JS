@@ -48,6 +48,7 @@ const rerender = () => {
   if (read_local().length === 0) {
     const text_elem = document.createElement("p");
     text_elem.innerText = "Никаких дел нет!";
+    text_elem.classList.add('text');
     tasks_container.append(text_elem);
   } else {
     read_local().forEach((item) => {
