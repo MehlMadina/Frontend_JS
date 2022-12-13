@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #8cc8f0;
+    border-radius: 10px;
+}
+
+.form input {
+    margin: 12px;
+    padding: 10px;
+    width: 500px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fffefe;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form button {
+    width: 200px;
+    height: 33px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #22c7c7;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.card {
+    display: inline-block;
+    margin: 0 30px 30px 60px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    background-color: #8cc8f0;
+}
+
+.card p {
+    padding: 15px;
+}
+
+.delete_btn {
+    width: 80px;
+    height: 25px;
+    margin-left: 30%;
+    background-color: #22c7c7;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #fffefe;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.card_title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.total_prc_cnt p {
+    padding: 10px;
+    text-align: center;
+}
