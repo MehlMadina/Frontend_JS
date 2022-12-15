@@ -172,3 +172,13 @@ const customWithoutOrd = (arr1, arr2) =>
   arr1.filter(({ id }) => arr2.every(({ customerId }) => customerId !== id));
 
 console.log(customWithoutOrd(customers, orders));
+
+
+
+// let notOrderedUsers = (customers, orders) => {
+//   return customers.filter(
+//     (customer) => (!orders.find( order => order.id === customer.id)
+//   ));
+// };
+
+// console.log(notOrderedUsers(customers, orders));
