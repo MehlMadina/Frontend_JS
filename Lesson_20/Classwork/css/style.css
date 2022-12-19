@@ -1,0 +1,32 @@
+.post {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.subheader {
+    font-size: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid black;
+    gap: 20px;
+}
+
+.form>* {
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+button {
+    align-self: flex-end;
+    width: 50%;
+    min-width: 100px;
+}
