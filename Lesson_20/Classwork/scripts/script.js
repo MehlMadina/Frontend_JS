@@ -146,9 +146,3 @@ const sendPost = (title, body, userId) => {
 };
 
 
-const posts = [];
-
-const rerender = () => {
-    root.innerText = '';
-    
-}
