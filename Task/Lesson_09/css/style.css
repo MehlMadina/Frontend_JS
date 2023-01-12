@@ -102,3 +102,8 @@ button {
 .notification.danger {
     background-color: #f85a5a;
 }
+
+.notification-text {
+    font-size: 20px;
+    text-align: center;
+}
