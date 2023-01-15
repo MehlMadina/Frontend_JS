@@ -19,4 +19,6 @@ JavaScript_Homeworks
 [ToDos Case App](https://mehlmadina.github.io/Frontend_JS/Lesson_18/Classwork/)
 <br>
 [Products Cards Render](https://mehlmadina.github.io/Frontend_JS/Lesson_18/Homework/)
+<br>
+[Graphics with using canvas tag](https://mehlmadina.github.io/Frontend_JS/Lesson_22/Classwork/)
 
