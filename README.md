@@ -11,6 +11,8 @@ JavaScript_Homeworks
 [Homework 10.12.2022](https://mehlmadina.github.io/Frontend_JS/Lesson_18/Homework/)
 <br>
 [Homework 17.12.2022](https://mehlmadina.github.io/Frontend_JS/Lesson_20/Homework/)
+<br>
+[Homework 11.01.2023](https://mehlmadina.github.io/Frontend_JS/Lesson_23/Homework/)
 <br></br>
 [Buttons](https://mehlmadina.github.io/Frontend_JS/Task/Lesson_05/index.html)
 <br>
